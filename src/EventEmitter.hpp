@@ -2,7 +2,7 @@
 //    FILE: EventEmitter.hpp
 //  AUTHOR: RyLee Harrison
 // VERSION: 1.0.0
-//     URL: https://github.com/RyLeeHarrison/EventEmitter-Arduino
+//     URL: https://github.com/RyLeeHarrison/EventEmitter
 
 #ifndef EVENTEMITTER_HPP
 #define EVENTEMITTER_HPP
