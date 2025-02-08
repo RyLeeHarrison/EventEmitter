@@ -1,12 +1,16 @@
+
 # EventEmitter for Arduino
 EventEmitter is a **lightweight**, **memory‑efficient** event emitter library for Arduino. It brings the familiar **Node.js** event model to embedded systems, allowing you to attach callbacks to events, emit events with custom arguments, and manage one‑time or recurring events—**all without dynamic memory allocation!**
 
-## How to Install
-#### Until the lib is accepted in the Arduino Library registry:
+## How to Manually Install
 1. Download: [EventEmitter.zip](https://github.com/RyLeeHarrison/EventEmitter/archive/refs/heads/main.zip)
 2. In the Arduino IDE's menu bar click: *Sketch > Include Library > Add .ZIP Library*
 3. Select "[EventEmitter.zip](https://github.com/RyLeeHarrison/EventEmitter/archive/refs/heads/main.zip)"
 4. Done!
+
+## How to Find Examples After Installing
+In the Arduino IDE's menu bar click: *File > Examples > EventEmitter > Choose an example*
+
 
 ## Features
 
