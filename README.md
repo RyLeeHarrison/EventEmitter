@@ -1,10 +1,12 @@
 # EventEmitter for Arduino
 EventEmitter is a **lightweight**, **memory‑efficient** event emitter library for Arduino. It brings the familiar **Node.js** event model to embedded systems, allowing you to attach callbacks to events, emit events with custom arguments, and manage one‑time or recurring events—**all without dynamic memory allocation!**
 
-## Install
-1. Download the zip from github.
-2. In the Arduino IDE click:
-*Sketch > Include Library > Add .ZIP Library*
+## How to Install
+#### Until the lib is accepted in the Arduino Library registry:
+1. Download: [EventEmitter.zip](https://github.com/RyLeeHarrison/EventEmitter/archive/refs/heads/main.zip)
+2. In the Arduino IDE's menu bar click: *Sketch > Include Library > Add .ZIP Library*
+3. Select "[EventEmitter.zip](https://github.com/RyLeeHarrison/EventEmitter/archive/refs/heads/main.zip)"
+4. Done!
 
 ## Features
 
@@ -27,7 +29,6 @@ Attach a callback that will be called whenever the event is triggered.
 void onMyEvent() {
   // Insert code to run when "myEvent" occurs.
 }
-
 // Register the "myEvent" event.
 emitter.on("myEvent", onMyEvent);
 ```
@@ -39,7 +40,6 @@ Trigger the event, with or without arguments.
 ```cpp
 // Emit "myEvent" with no arguments.
 emitter.emit("myEvent");
-
 // Emit an event with arguments (for example, an integer and a float).
 emitter.emit("dataEvent", 42, 3.14);
 ```
@@ -71,7 +71,6 @@ Clear all callbacks for a specific event or for all events.
 ```cpp
 // Remove all listeners from "myEvent".
 emitter.removeAllListeners("myEvent");
-
 // Remove every listener from all events.
 emitter.removeAllListeners();
 ```
@@ -83,7 +82,6 @@ Limit or retrieve the maximum number of listeners that can be registered per eve
 ```cpp
 // Set the maximum number of listeners per event to 3.
 emitter.setMaxListeners(3);
-
 // Retrieve the current maximum listener count.
 size_t maxListeners = emitter.getMaxListeners();
 ```
